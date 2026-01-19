@@ -1,0 +1,147 @@
+product_details_page {
+    width: 100%;
+}
+.product_details_container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.details_content {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.back_btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.back_btn:hover {
+    background-color: #eee;
+}
+
+.product_main_info {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.product_image_block {
+    flex: 1;
+}
+
+.product_image_block img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+.product_info_block {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product_title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.product_price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #009661;
+}
+
+.product_meta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #666;
+}
+
+.meta_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.action_buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.contact_seller_btn {
+    padding: 15px 30px;
+    background-color: #009661;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact_seller_btn:hover {
+    background-color: #007a4e;
+}
+
+.product_description_section, .product_specs_section {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.section_title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.specs_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.spec_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.spec_label {
+    color: #666;
+}
+
+.spec_value {
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .product_main_info {
+        flex-direction: column;
+    }
+}

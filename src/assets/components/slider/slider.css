@@ -1,0 +1,129 @@
+.slider_section {
+    width: 100%;
+}
+
+.home_remember-block {
+    padding: 40px 24px;
+}  
+  
+.remember_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+  
+.remember_left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.remember_left h3 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 24px 0;
+}
+  
+.slider_controls {
+    display: flex;
+    gap: 16px;
+}
+  
+.slider_btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #333;
+    padding: 0;
+}
+  
+.slider_btn:hover:not(:disabled) {
+    border-color: #009661;
+    color: #009661;
+}
+  
+.slider_btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border-color: #e0e0e0;
+    color: #ccc;
+}
+  
+.remember_right {
+    width: 70%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+  
+.slider_track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.slider_item {
+    /* min-width: 280px; - removed for correct calculation based on js */
+    padding: 0 10px;
+    box-sizing: border-box;
+    /* flex-shrink: 0; */
+    cursor: pointer;
+    margin: 10px;
+}
+  
+@media (max-width: 992px) {
+    .remember_content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .remember_left {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+  
+    .remember_left h3 {
+        margin: 0;
+        font-size: 24px;
+    }
+  
+    .remember_right {
+        width: 100%;
+    }
+}
+  
+@media (max-width: 768px) {
+    /* .slider_item {
+        min-width: 250px;
+    } */
+}
+  
+@media (max-width: 480px) {
+    /* .slider_item {
+        min-width: 100%;
+    } */
+     .flex_row {
+        flex-direction: row;}
+    
+    .remember_left h3 {
+        font-size: 20px;
+    }
+    
+    .slider_btn {
+        width: 36px;
+        height: 36px;
+    }
+}

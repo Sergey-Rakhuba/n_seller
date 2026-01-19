@@ -1,0 +1,77 @@
+.favorites_page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+.favorites_container {
+    flex: 1;
+    max-width: 1440px;
+    margin: 20px auto;
+    width: 95%;
+    padding-bottom: 40px;
+}
+
+.page_title {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.favorites_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.favorite_item_wrapper {
+    position: relative;
+}
+
+.remove_fav_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #ff4d4f;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.2s;
+}
+
+.remove_fav_btn:hover {
+    background: #ff4d4f;
+    color: white;
+}
+
+.empty_state {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.go_home_btn {
+    margin-top: 20px;
+    background-color: #009661;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.go_home_btn:hover {
+    background-color: #007c50;
+}

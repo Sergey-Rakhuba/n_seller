@@ -1,0 +1,99 @@
+.card_block {
+    display: block;
+    box-sizing: border-box;
+    flex: 1 1 20%;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
+    img {
+        width: 100%;
+
+        object-fit: cover;
+    }
+    .card_content {
+        padding: 12px 24px;
+        p {
+            color: black;
+        }
+    }
+    .card_btn-block {
+        padding: 6px 12px;
+        .adress_item {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            background: rgba(249, 249, 249, 1);
+            padding: 6px 12px;
+            border-radius: 4px;
+            margin-bottom: 14px;
+            h4 {
+                /* order: -1; */
+                display: flex;
+                margin: 0;
+                font-size: 12px;
+                color: #222222;
+                padding-left: 10px;
+                margin: 10px auto;
+            }
+        }
+    }
+    .card_itm-block_params {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        margin-top: 8px;
+        span {
+            font-size: 14px;
+            color: #555555;
+        }
+        .card_itm-group {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 14px;
+            color: #555555;
+        }
+    }
+    .location {
+        display: flex;
+        align-items: center;
+        
+        p {
+            font-size: 12px;
+            color: #555555;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .card_content, .adress_item  {
+        margin: 0;
+        
+        p {
+            font-size: 12px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+        h4 {
+            font-size: 14px;
+        }
+        .card_itm-group {
+            font-size: 12px;
+        }
+       
+    }
+    .card_btn-block {
+        .flex_row {
+            flex-direction: row;
+            
+        }
+        br {
+            display: none;
+        }
+    }
+    .card_block {
+        margin: 0px !important;
+    }
+    
+}

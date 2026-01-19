@@ -7,11 +7,16 @@
 .flex_row {
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
 }
-
 .flex_column {
   display: flex;
   flex-direction: column;
+}
+.flex_wrap {
+  flex-wrap: wrap;
 }
 
 .flex_ctr {
@@ -24,10 +29,26 @@
 .flex_around {
   justify-content: space-around;
 }
+.grid_row {
+  display: grid;
+  grid-template-columns: 50% 50% ;
+  gap: 20px;
+}
 .align-center {
   align-items: center;
 } 
-
+.text-center {
+  text-align: center;
+}
+.order-mobile {
+  display: flex;
+  flex-direction: column;
+  
+  @media screen and (max-width: 480px) {
+    order: 1;
+    padding-top: 30px;
+  }
+}
 .modal-overlay {
   position: fixed;
   top: 0;
